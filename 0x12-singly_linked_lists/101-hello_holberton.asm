@@ -1,16 +1,15 @@
-section .text
-	global main
+global main
+extern printf
 
+	section .text
 main:
-	mov	edx, len
-	mov	ecx, msg	;message variable
-	mov 	ebx, 1		;write to standard output
-	mov	eax, 4
-	int	0x80		;call kernel
-
-	mov	eax, 1 		;system call (sys_exit)
-	int	0x80		;call kernel
-
-section .data
-msg db 'Hello, Coding', 0xa	;message to print
-len equ $ - msg			;length of the string
+	push rbp
+	mov rdi, format
+	mov rsi, message
+	mov rax, 0
+	call printf
+	pop rbp
+	mov rax, 0
+	ret
+message: db "Hello, Holberton", 0
+format:	db "%s", 10, 0
