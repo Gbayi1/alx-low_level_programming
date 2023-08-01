@@ -2,6 +2,9 @@
 
 /**
  * add_nodeint - Adds a new node at the beginning of a list
+ * @head: Pointer to address of a list
+ * @n: Integer
+ *
  * Return: Address of new element
  * NULL if failed
  */
