@@ -1,9 +1,11 @@
 #include "lists.h"
 
 /**
- * sum_listint - Sums all data of the list 
- * Return: Sum of all data (n) of a linked list
- * 0 if empty list
+ * pop_listint - Deletes the head node of a linked list
+ * @head: Pointer to a struct
+ *
+ * Return: Head node's data (n)
+ * 0 if linked list is empty
  */
 int sum_listint(listint_t *head)
 {

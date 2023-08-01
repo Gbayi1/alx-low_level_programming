@@ -1,11 +1,13 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - Deletes a node at a given index
+ * insert_nodeint_at_index - Inserts a new node at a given position
  * @head: Pointer to address of a list
- * @index: Index of the list where node should be deleted
+ * @idx: Index of the list where new node should be added
+ * @n: Integer
  *
- * Return: 1 on success, -1 if fail
+ * Return: Address of the new node
+ * Null if failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {

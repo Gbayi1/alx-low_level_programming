@@ -2,6 +2,7 @@
 
 /**
  * free_listint2 - Frees a list
+ * @head: Pointer to a struct
  */
 void free_listint2(listint_t **head)
 {

@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * find_listint_loop - Finds the loop in a linked list
- * Return: Address of the node where loop starts
- * NULL if there is no loop
+ * reverse_listint - Reverses a linked list
+ * @head: Pointer to address of a list
+ *
+ * Return: Pointer to first node of reversed list
  */
 listint_t *find_listint_loop(listint_t *head)
 {

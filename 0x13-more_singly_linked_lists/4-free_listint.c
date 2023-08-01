@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * free_listint - Frees a lit
+ * free_listint - Frees a list
+ * @head: Pointer to a struct
  */
 void free_listint(listint_t *head)
 {

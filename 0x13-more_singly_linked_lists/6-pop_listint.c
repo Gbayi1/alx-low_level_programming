@@ -2,6 +2,8 @@
 
 /**
  * pop_listint - Deletes the head node of a linked list
+ * @head: Pointer to a struct
+ *
  * Return: Head node's data (n)
  * 0 if linked list is empty
  */
