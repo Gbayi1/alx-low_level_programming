@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * flip_bits - gets the number of bits flipped form n to m
  * @n: initial lu int
